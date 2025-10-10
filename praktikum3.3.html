@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hasil Pemesanan Barang</title>
+</head>
+<style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f0f0f0;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background-color: #fff;
+            padding: 20px;
+            border: 1px solid #ccc;
+        }
+        .header {
+            border: 1px solid #ccc;
+            padding: 10px;
+            margin-bottom: 20px;
+            background-color: #eee;
+        }
+        .header nav a {
+            margin-right: 15px;
+            text-decoration: none;
+            color: #333;
+        }
+        .content {
+            display: flex;
+            gap: 20px;
+        }
+        .product-image {
+            width: 200px;
+            height: 200px;
+            border: 1px solid #ccc;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 24px;
+            color: #ccc;
+        }
+        .form-section {
+            flex-grow: 1;
+        }
+        .form-row {
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+        }
+        .form-row label {
+            width: 150px;
+        }
+        .form-row input[type="text"], .form-row select {
+            flex-grow: 1;
+            padding: 5px;
+            border: 1px solid #ccc;
+        }
+        .form-row .small-text {
+            font-size: 12px;
+            color: #666;
+            margin-left: 10px;
+        }
+        .button-container {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .pay-button {
+            padding: 10px 30px;
+            background-color: #28a745;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div style="text-align: center; margin-bottom: 10px;">A Web Page</div>
+            <div style="border: 1px solid #ccc; padding: 5px; display: flex; align-items: center; gap: 5px;">
+                <span style="font-size: 20px;">← → ↻ ⊗</span>
+                <input type="text" value="http://" style="flex-grow: 1; border: 1px solid #ccc; padding: 2px;">
+                <span style="font-size: 20px;">🔍</span>
+            </div>
+            <div style="text-align: center; margin-top: 10px;">
+                <nav>
+                    <a href="#">Home</a> |
+                    <a href="#">Register</a> |
+                    <a href="#">Policy</a> |
+                    <a href="#">About</a>
+                </nav>
+            </div>
+        </div>
+        <div class="content">
+            <div class="product-image">
+                <img src="download.jpeg" />
+            </div>
+            <div class="form-section">
+                <div class="form-row">
+                    <label>Title Here:</label>
+                    <span>ASUS VIVOBOOK GO 14</span>
+                </div>
+                <div class="form-row">
+                    <label>Description:</label>
+                    <span>GREY,8 GB RAM,14.0 FULL HD,W11 OHS,AMD RYZEN 3 7320U</span>
+                </div>
+                <div class="form-row">
+                    <label>Year:</label>
+                    <span>2020</span>
+                </div>
+                <div class="form-row">
+                    <label>Model:</label>
+                    <span>A1407Q</span>
+                </div>
+                <div class="form-row">
+                    <label>Condition:</label>
+                    <span>Mint</span>
+                </div>
+                <div class="form-row">
+                    <label>Total Amount:</label>
+                    <span>£900</span>
+                </div>
+                <div class="form-row">
+                    <label>Pay to:</label>
+                    <span>123-456-789-0</span>
+                </div>
+                <div class="form-row">
+                    <label for="payment-type">Payment Type:</label>
+                    <select id="payment-type">
+                        <option>Visa Debit</option>
+                    </select>
+                </div>
+                <div class="form-row">
+                    <label for="account-holder">Account Holder:</label>
+                    <input type="text" id="account-holder" value="Aji Hendramawan">
+                </div>
+                <div class="form-row">
+                    <label for="account-no">Account No:</label>
+                    <input type="text" id="account-no" value="123-456-789-0">
+                </div>
+                <div class="form-row">
+                    <label></label>
+                    <div>
+                        <input type="checkbox" id="send-mobile">
+                        <label for="send-mobile">Send to Mobile Phone</label>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <label></label>
+                    <div>
+                        <input type="checkbox" id="send-email">
+                        <label for="send-email">Email me copy of transaction</label>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <label for="mobile-phone">Send to Mobile Phone:</label>
+                    <input type="text" id="mobile-phone" value="085775275221">
+                </div>
+                <div class="form-row">
+                    <label for="email">Send to Email:</label>
+                    <input type="text" id="email" value="aji.hendra2104@gmail.com">
+                </div>
+                <div class="button-container">
+                    <button class="pay-button">Pay using Guts.id</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

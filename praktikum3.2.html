@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pemesanan Barang</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background-color: #fff;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .header {
+            background-color: #e0e0e0;
+            padding: 10px;
+            border-bottom: 1px solid #ccc;
+            margin-bottom: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .header-nav a {
+            margin-right: 15px;
+            text-decoration: none;
+            color: #333;
+        }
+        .form-row {
+            display: flex;
+            margin-bottom: 15px;
+            align-items: center;
+        }
+        .form-row label {
+            width: 150px;
+            font-weight: bold;
+            text-align: right;
+            padding-right: 10px;
+        }
+        .form-row .input-group {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+        }
+        .form-row .input-group input[type="text"],
+        .form-row .input-group select {
+            width: 100%;
+            padding: 8px;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        .form-row .input-group .checkbox-group {
+            display: flex;
+            align-items: center;
+            margin-top: 5px;
+        }
+        .form-row .input-group .checkbox-group input[type="checkbox"] {
+            margin-right: 5px;
+        }
+        .form-row .input-group .checkbox-label {
+            font-weight: normal;
+        }
+        .form-row.upload-section {
+            align-items: flex-start;
+        }
+        .upload-box {
+            width: 150px;
+            height: 150px;
+            border: 1px dashed #ccc;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-right: 20px;
+            background-color: #f9f9f9;
+        }
+        .upload-box span {
+            color: #ccc;
+            font-size: 2em;
+        }
+        .upload-button {
+            padding: 8px 15px;
+            border: 1px solid #ccc;
+            background-color: #e0e0e0;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+        .button-row {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .button-row button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            font-size: 1em;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="header-nav">
+                <a href="#">Home</a>
+                <a href="#">Generate Link</a>
+                <a href="#">Transaction History</a>
+                <a href="#">Policy</a>
+                <a href="#">Logout</a>
+            </div>
+        </div>
+
+        <form action="#">
+            <div class="form-row upload-section">
+                <div class="upload-box">
+                    <img src="download.jpeg" width="150" height="150"/>
+                    <span></span>
+                </div>
+                <div class="input-group">
+                    <button type="button" class="upload-button">Upload Picture</button>
+                </div>
+            </div>
+
+            <div class="form-row">
+                <label for="title">Title Here</label>
+                <div class="input-group">
+                    <input type="text" id="title" value="ASUS VIVOBOOK GO 14">
+                </div>
+            </div>
+            
+            <div class="form-row">
+                <label for="description">Description</label>
+                <div class="input-group">
+                    <input type="text" id="description" value="GREY,8 GB RAM,14.0 FULL HD,W11 OHS,AMD RYZEN 3 7320U">
+                </div>
+            </div>
+            
+            <div class="form-row">
+                <label for="year">Year</label>
+                <div class="input-group">
+                    <input type="text" id="year" value="2020">
+                </div>
+            </div>
+            
+            <div class="form-row">
+                <label for="model">Model</label>
+                <div class="input-group">
+                    <input type="text" id="model" value="A1407Q">
+                </div>
+            </div>
+            
+            <div class="form-row">
+                <label for="condition">Condition</label>
+                <div class="input-group">
+                    <input type="text" id="condition" value="Mint">
+                </div>
+            </div>
+            
+            <div class="form-row">
+                <label for="account-number">Account Number</label>
+                <div class="input-group">
+                    <input type="text" id="account-number" value="123-456-784-0">
+                </div>
+            </div>
+            
+            <div class="form-row">
+                <label for="bank">Bank</label>
+                <div class="input-group">
+                    <select id="bank">
+                        <option>BRI</option>
+                    </select>
+                </div>
+            </div>
+            
+            <div class="form-row">
+                <label for="account-holder">Account Holder</label>
+                <div class="input-group">
+                    <input type="text" id="account-holder" value="Aji Hendramawan">
+                </div>
+            </div>
+            
+            <div class="form-row">
+                <label>Transaction</label>
+                <div class="input-group">
+                    <p>If the transaction is for 3 person, choose 3 from the drop-down list</p>
+                    <div class="checkbox-group">
+                        <input type="checkbox" id="send-mobile">
+                        <label for="send-mobile" class="checkbox-label">Send to Mobile Phone</label>
+                    </div>
+                    <div class="checkbox-group">
+                        <input type="checkbox" id="send-email">
+                        <label for="send-email" class="checkbox-label">Send to Email</label>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="form-row">
+                <label for="mobile-phone">Send to Mobile Phone</label>
+                <div class="input-group">
+                    <input type="text" id="mobile-phone" value="085775275221">
+                </div>
+            </div>
+            
+            <div class="form-row">
+                <label for="email">Send to Email</label>
+                <div class="input-group">
+                    <input type="text" id="email" value="aji.hendra2104@gmail.com">
+                </div>
+            </div>
+
+            <div class="button-row">
+                <button type="submit">Generate Nabr Link</button>
+            </div>
+        </form>
+    </div>
+
+</body>
+</html>
