@@ -1,0 +1,114 @@
+body {
+  background-color: #f9fff9;
+  font-family: Arial, sans-serif;
+  color: #333;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+}
+
+#header {
+  background-color: orange;
+  text-align: center;
+  padding: 20px;
+  border-bottom: 3px solid #ffd92f;
+}
+
+#header h1 {
+  color: #ffe2a4;
+  margin-bottom: 10px;
+}
+
+#soekarno {
+  display: block;
+  text-align: center;
+  font-weight: bold;
+  color: #ffda96;
+}
+
+ul.menu {
+  background-color: #ffd780;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+ul.menu li {
+  display: inline-block;
+}
+
+ul.menu li a {
+  display: block;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+}
+
+.gambar {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  padding: 20px;
+}
+
+.gambar img {
+  width: 250px;
+  border-radius: 10px;
+  border: 2px solid #ffdc92;
+}
+
+.isi,
+#profil,
+#beternak {
+  width: 85%;
+  margin: 20px auto;
+  background-color: #ffffff;
+  border: 1px solid #d9ead9;
+  border-radius: 8px;
+  padding: 15px;
+}
+
+h3 {
+  color: #000000;
+  border-bottom: 2px solid #ffc13d;
+  padding-bottom: 5px;
+}
+
+.koleksi {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  background-color: #f0fff0;
+  padding: 15px;
+}
+
+.koleksi img {
+  width: 180px;
+  border: 2px solid #ffca37;
+  border-radius: 8px;
+}
+
+.promo {
+  text-align: center;
+  background-color: #fce773;
+  padding: 20px;
+  border-top: 3px solid #fff06d;
+}
+
+.promo strong {
+  color: #080702;
+}
+
+.promo del {
+  color: #000000;
+}
+
+#Wa {
+  color: #000000;
+  font-weight: bold;
+}
+
+.ecommerce {
+  list-style-type: none;
+}
