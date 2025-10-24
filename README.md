@@ -1,1 +1,1 @@
-# Praktikum-UI-UX
+# PraktikumUI/UX
